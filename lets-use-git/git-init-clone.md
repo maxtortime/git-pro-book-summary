@@ -24,4 +24,11 @@ $ git clone https://github.com/maxtortime/git-pro-book-commentary.git tuto/ (pat
 $ git clone tuto/ tuto2/
 ```
 
-만약 디렉토리에서 git을 해제하고 싶다면? `.git` 디렉토리를 지워버리면 깔끔하다.
+위 세 명령어의 경우는 폴더명이 저장소 이름이 아니라 지정된 경로 이름이 된다는 점을 유의하자. 그리고 책에는 없지만 부가적인 기능으로 커밋이 엄청나게 많은 저장소의 경우 clone이 오래 걸리므로 `--depth` 옵션으로 받아올 커밋의 양을 조절할 수 있다. 
+
+```
+git clone https://github.com/torvalds/linux.git --depth=1
+```
+
+Depth 옵션을 주지 않고 받아오는 커밋의 양과 시간을 비교하는 것도 재밌을 것이다.
+마지막으로 만약 디렉토리에서 git을 해제하고 싶다면? `.git` 디렉토리를 지워버리면 깔끔하다.
